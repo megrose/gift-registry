@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
+import './styles/variables.css';
+import './styles/global.css';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import Header from './components/common/Header';
 import WelcomePage from './components/common/WelcomePage';
