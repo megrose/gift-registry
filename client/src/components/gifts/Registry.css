@@ -1,61 +1,164 @@
-.registry-page {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .registry-header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .registry-header h1 {
-    color: var(--color-text-primary);
-    margin-bottom: 0.5rem;
-  }
-  
-  .registry-date {
-    color: var(--color-text-secondary);
-  }
-  
-  .registry-details {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 2fr;
-  }
-  
-  .registry-info {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .registry-items {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .add-item-button {
-    background-color: var(--color-primary);
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-bottom: 1rem;
-  }
-  
-  .items-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-  
-  @media (max-width: 768px) {
-    .registry-details {
-      grid-template-columns: 1fr;
-    }
-  }
+.registry-container {
+  display: flex;
+  min-height: calc(100vh - var(--header-height));
+  background-color: var(--color-background);
+  padding: var(--spacing-md);
+  gap: var(--spacing-md);
+}
+
+/* Left Sidebar */
+.registry-sidebar {
+  width: 25%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.registry-selector {
+  background-color: var(--color-white);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.registry-selector h3 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-black);
+}
+
+.registry-selector select {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-primary);
+}
+
+.registry-details-card {
+  background-color: var(--color-white);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.registry-details-card h2 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-black);
+}
+
+.details-content {
+  margin-bottom: var(--spacing-md);
+}
+
+.details-content p {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Main Content */
+.registry-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.registry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.registry-header h1 {
+  font-size: var(--font-size-xxl);
+  color: var(--color-black);
+}
+
+.registry-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.registry-divider {
+  border: none;
+  border-top: 1px solid var(--color-gray-light);
+  margin: var(--spacing-md) 0;
+}
+
+/* Gift Grid */
+.gift-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.gift-item-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item-brand {
+  font-weight: 600;
+  color: var(--color-gray-dark);
+  margin: var(--spacing-sm) var(--spacing-sm) 0;
+}
+
+.item-name {
+  margin: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-base);
+}
+
+.item-price {
+  margin: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.shipping-status {
+  margin: var(--spacing-xs) var(--spacing-sm);
+  color: var(--color-gray-dark);
+  font-size: var(--font-size-small);
+}
+
+.purchase-controls {
+  display: flex;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+}
+
+.quantity-input {
+  width: 60px;
+  padding: var(--spacing-xs);
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+.item-status {
+  padding: var(--spacing-sm);
+  font-size: var(--font-size-small);
+  color: var(--color-gray-dark);
+  text-align: center;
+  border-top: 1px solid var(--color-gray-light);
+}
+
+.no-items-message {
+  text-align: center;
+  padding: var(--spacing-xl);
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+}
+
+.no-items-message p {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-gray-dark);
+}
