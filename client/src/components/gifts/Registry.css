@@ -1,0 +1,61 @@
+.registry-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .registry-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .registry-header h1 {
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .registry-date {
+    color: var(--color-text-secondary);
+  }
+  
+  .registry-details {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .registry-info {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registry-items {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-item-button {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .items-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  @media (max-width: 768px) {
+    .registry-details {
+      grid-template-columns: 1fr;
+    }
+  }

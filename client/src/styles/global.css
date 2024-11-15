@@ -1,0 +1,365 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: #484848;
+    background-color: #f7f7f7;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Landing page styles */
+.landing-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f7f7f7;
+}
+
+.landing-content {
+    width: 100%;
+    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 2rem;
+}
+
+.landing-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Auth styles */
+.auth-container {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.auth-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-box h2 {
+    margin-bottom: 1.5rem;
+    color: #484848;
+    text-align: center;
+}
+
+.auth-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #767676;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #484848;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ff5a5f;
+}
+
+/* Base button styles */
+.btn {
+    padding: 16px;
+    background-color: #229c46;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: var(--font-primary);
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+.btn:hover {
+    background-color: #9dbba6;
+}
+
+/* Primary button - using your green theme */
+.btn.primary-btn {
+    background-color: #229c46;
+    color: #ffffff;
+}
+
+.btn.primary-btn:hover {
+    background-color: #9dbba6;
+}
+
+/* Secondary button */
+.btn.secondary-btn {
+    background-color: #f0f0f0;
+    color: #333; /* Adding this for better contrast */
+}
+
+.btn.secondary-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Full width variant */
+.btn.full-width {
+    width: 100%;
+}
+
+/* Buy button - keeping the same style as primary for now */
+.btn.buy-btn {
+    background-color: #229c46;
+    color: #ffffff;
+    padding: 12px 24px; /* Slightly smaller padding for item cards */
+}
+
+.btn.buy-btn:hover {
+    background-color: #9dbba6;
+}
+
+/* Alert styles */
+.alert {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.alert-error {
+    background-color: #fff3f3;
+    color: #ff5a5f;
+    border: 1px solid #ffe5e5;
+}
+
+/* Gift list styles */
+.gifts-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gifts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.gifts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.gift-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gift-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gift-info {
+    padding: 1rem;
+}
+
+.gift-price {
+    color: #ff5a5f;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+/* Header styles */
+.header {
+    background-color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #484848;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #ff5a5f;
+}
+/* Add these new styles */
+.landing-split {
+    display: flex;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.landing-image-side {
+    flex: 1;
+    background-color: #B5C8BC; /* sage green color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.landing-form-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.image-container {
+    max-width: 400px;
+    padding: 2rem;
+    background: white;
+    border-radius: 24px;
+}
+
+.gift-illustration {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 2rem;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+.forgot-password a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.sign-in-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #B5C8BC;
+    color: #333;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sign-in-button:hover {
+    background-color: #A3B8AA;
+}
+
+.create-account {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.create-account a {
+    color: #333;
+    text-decoration: underline;
+    margin-left: 0.5rem;
+}
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .landing-split {
+        flex-direction: column;
+    }
+    
+    .landing-image-side {
+        display: none; /* Hide illustration on mobile */
+    }
+    
+    .landing-form-side {
+        padding: 2rem 1rem;
+    }
+}
