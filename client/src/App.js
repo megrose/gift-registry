@@ -29,45 +29,45 @@ function App() {
               <Route path="/register" element={<Register />} />
 
               {/* Protected routes */}
-              <Route 
-                path="/createlist" 
+              <Route
+                path="/createlist"
                 element={
                   <ProtectedRoute>
                     <CreateList />
                   </ProtectedRoute>
-                } 
+                }
               />
-              <Route 
-                path="/user/:userId/registry/:registryId" 
+              <Route
+                path="/user/:userId/registry/:registryId"
                 element={
                   <ProtectedRoute>
                     <Registry />
                   </ProtectedRoute>
-                } 
+                }
               />
-              <Route 
-                path="/gifts" 
+              <Route
+                path="/gifts"
                 element={
                   <ProtectedRoute>
                     <GiftList />
                   </ProtectedRoute>
-                } 
+                }
               />
-              <Route 
-                path="/add-gift" 
+              <Route
+                path="/add-gift"
                 element={
                   <ProtectedRoute>
                     <AddGiftForm />
                   </ProtectedRoute>
-                } 
+                }
               />
-              <Route 
-                path="/welcome" 
+              <Route
+                path="/welcome"
                 element={
                   <ProtectedRoute>
                     <WelcomePage />
                   </ProtectedRoute>
-                } 
+                }
               />
             </Routes>
           </main>

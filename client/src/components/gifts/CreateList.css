@@ -128,7 +128,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../../assets/stars-pattern.png');
+    /* background-image: url('../../assets/stars-pattern.png'); */
     background-repeat: repeat;
     background-size: 200px;
     opacity: 0.3;

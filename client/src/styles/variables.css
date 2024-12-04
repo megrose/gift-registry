@@ -8,6 +8,12 @@
     --color-gray-light: #DDDDDD;
     --color-white: #FFFFFF;
     --color-background: #F7F7F7;
+    --primary-yellow: #FFE168;
+    --primary-pink: #FFF5F5;
+    --text-dark: #1A1A1A;
+    --button-radius: 25px;
+    --max-width: 1200px;
+    --section-spacing: 80px;
     
     /* Spacing */
     --spacing-xs: 8px;
