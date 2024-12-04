@@ -39,7 +39,11 @@ const GiftingWizardSection = () => (
       </button>
     </div>
     <div className={styles.wizardGraphic}>
-      {/* Wand and stars graphic */}
+      <img
+        src="/assets/wand-with-stars.png"
+        alt="Magic wand with stars"
+        className={styles.wandImage}
+      />
     </div>
   </section>
 );

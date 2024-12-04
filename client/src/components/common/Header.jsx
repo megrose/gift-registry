@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
+import styles from './Header.module.css';
 import withLoveLogo from '../../assets/with-love-logo.png';
 
 const Header = () => {
