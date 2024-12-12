@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './LandingPage.module.css';
 import withLoveLogo from '../../assets/with-love-logo.png';
 import heroImage from '../../assets/hero-image.jpg';
+import magicWandImage from '../../assets/magic-wand.png';
 // import toddlerImage from '../../assets/toddler.jpg';
 // import elementaryImage from '../../assets/elementary.jpg';
 // import middleSchoolImage from '../../assets/middle-school.jpg';
@@ -39,11 +40,7 @@ const GiftingWizardSection = () => (
       </button>
     </div>
     <div className={styles.wizardGraphic}>
-      <img
-        src="/assets/wand-with-stars.png"
-        alt="Magic wand with stars"
-        className={styles.wandImage}
-      />
+      <img src={magicWandImage} alt="Magic wand with stars" />
     </div>
   </section>
 );
